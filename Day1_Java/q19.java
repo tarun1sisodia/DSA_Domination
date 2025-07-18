@@ -31,5 +31,7 @@ public class q19 {
             System.out.println("Leap year");
         else
             System.out.println("Not a Leap year");
+                    sc.close();
+
     }
 }

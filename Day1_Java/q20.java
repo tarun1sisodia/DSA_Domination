@@ -21,5 +21,6 @@ public class q20 {
         else
             dis = 20;
         System.out.println(amount - (dis * amount) / 100);
+        sc.close();
     }
 }

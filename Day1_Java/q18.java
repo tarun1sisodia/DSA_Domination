@@ -20,6 +20,8 @@ public class q18 {
             } else {
                 System.out.println("C is Smallest");
             }
+                    sc.close();
+
         } catch (InputMismatchException e) {
             System.out.println("Something wrong");
         }
