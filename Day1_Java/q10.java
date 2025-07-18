@@ -5,10 +5,9 @@ public class q10 {
         System.out.println("Enter the radius of Sphere:");
 
         Scanner sc = new Scanner(System.in);
-        double PI = 3.14;
-        int r = sc.nextInt();
+        double r = sc.nextDouble();
 
-        System.out.println("Area:" + 4 * PI * r * r);
+        System.out.println("Area:" + 4 * Math.PI * r * r);
         sc.close();
     }
 }
