@@ -1,14 +1,21 @@
-//Accept a year and check if it a leap year or not (google to find out what's a leap year)
+//Accept three numbers and print the greatest among them.
 
-let year = parseInt(prompt("Enter the Year.. to check leap year or not.."));
+// let a = parseFloat(prompt('A:'));
+// let b = parseFloat(prompt('B:'));
+// let c = parseFloat(prompt('C:'));
 
-function leapYear(year) {
-    if (year % 400 == 0)
-        alert(`Leap year ${year}`);
-    else if (year % 4 == 0 && year % 100 != 0)
-        alert(`Leap year ${year}`);
-    else
-        alert(`Leap year nhi h yu.. ${year}`)
-    return year;
-}
-alert(leapYear(year));
+let a = 1;
+let b = 3;
+let c = 5;
+(() => {
+    if (a > b && b > c) {
+        alert('A', a, b, c,);
+    }
+    else if (b > c && a > c) {
+        alert('B', a, b, c,);
+    }
+    else {
+        alert('C', a, b, c,);
+
+    }
+})();

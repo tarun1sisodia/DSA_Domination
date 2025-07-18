@@ -1,18 +1,14 @@
-//Shop discount
+//Accept a year and check if it a leap year or not (google to find out what's a leap year)
 
+let year = parseInt(prompt("Enter the Year.. to check leap year or not.."));
 
-let money = prompt('Enter the price To get the Discount..');
-
-let dis = 0;
-(() => {
-
-    if (money >= 0 && money <= 5000) dis = 0;
-    else if (money > 5000 && money <= 7000) dis = 5;
-    else if (money > 7000 && money <= 10000) dis = 10;
-    else if (money > 10000) dis = 25;
+function leapYear(year) {
+    if (year % 400 == 0)
+        alert(`Leap year ${year}`);
+    else if (year % 4 == 0 && year % 100 != 0)
+        alert(`Leap year ${year}`);
     else
-        alert("invalid Input Please Check your Price.")
-    let discountprice = money - (dis * money) / 100;
-    alert(`Discount: ${discountprice} & Total Payable Amount is: ${money}`);
-})();
-
+        alert(`Leap year nhi h yu.. ${year}`)
+    return year;
+}
+alert(leapYear(year));
