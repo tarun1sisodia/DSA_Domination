@@ -12,7 +12,9 @@ let dis = 0;
     else if (money > 10000) dis = 25;
     else
         alert("invalid Input Please Check your Price.")
+
     let discountprice = money - (dis * money) / 100;
+    
     alert(`Discount: ${discountprice} & Total Payable Amount is: ${money}`);
 })();
 
