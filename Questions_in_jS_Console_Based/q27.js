@@ -8,18 +8,21 @@ sc.question('Sum upto your Number Just like Fabonacci..', (input) => {
 
     const n = parseInt(input);
 
-    if (n == 0) return "Zero";
+    if (n === 0) return "Zero";
 
-    else if (n == 1) return "1";
+    else if (n === 1) return "1";
 
     if (n > 1) {
+        //sum is zero but as the value of i increase it will add .
         let sum = 0;
+
         for (let i = 0; i <= n; i++) {
+            //Main Logic...
             sum += i;
-            console.log(sum);
 
         }
+        console.log(sum);
     }
-    
+
     sc.close();
 });

@@ -11,8 +11,9 @@ sc.question('Facotrial of a Number..', (input) => {
 });
 
 function factorial(n) {
-    if (n == 0 || n == 1) return 1;
+    if (n === 0 || n === 1) return 1;
     else if (n > 1) {
+        //Main Logic..
         return n * factorial(n - 1);
     }
     return n;

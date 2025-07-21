@@ -21,7 +21,7 @@ function rangeNumber(range) {
 
     for (let i = 0; i < range; i++) {
         //if found even then the current i or loop iteration value will be added to even = even +i;
-        if (i % 2 == 0) {
+        if (i % 2 === 0) {
             even += i;
         }
         //if found odd then the current i or loop iteration value will be added to odd = odd +i;
