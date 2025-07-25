@@ -102,8 +102,44 @@ const basicPrime = (n) => {
     else
         console.log(`No ,${n} is a Prime Number`);
 }
-basicPrime(4);
-basicPrime(3);
+// basicPrime(4);
+// basicPrime(3);
+const readline = require("readline");
+const sc = readline.createInterface({
+    input: process.stdin, output: process.stdout
+});
+
+sc.question('Enter The Number to Check prime number or not.', (val) => {
+    const num = parseInt(val);
+    basicPrime2(num);
+    console.log(num);
+    sc.close();
+});
+
+const basicPrime2 = (n) => {
+
+    let count;
+
+    if (n <= 1) console.log('Its Not Prime Number');
+
+    if (n === 2) console.log('its a Prime Number');
+
+    let newN = Math.floor(Math.sqrt(n));
+
+    for (let i = 2; i < newN; i++) {
+        if (n % i === 0) {
+            console.log("Its not a prime number");
+            count++;
+        }
+
+        else
+            console.log(newN + "is a prime Number");
+    }
+
+    if (count === 2) console.log('Yeah its a Prime  Number.');
+
+}
+
 
 function primeNumber(n) {
     if (n <= 1) {
