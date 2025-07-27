@@ -16,13 +16,18 @@ sc.question('Sum upto your Number Just like Fabonacci..', (input) => {
         //sum is zero but as the value of i increase it will add .
         let sum = 0;
 
+        /*
         for (let i = 0; i <= n; i++) {
-            //Main Logic...
-            sum += i;
-
-        }
+            
+        //Main Logic...
+        sum += i;
+        
+    }
+    */
+        sum = n * (n + 1) / 2;
         console.log(sum);
     }
 
     sc.close();
 });
+
