@@ -1,7 +1,6 @@
 // print  weekday using switch
 
 let week = prompt('Weekday.').toLowerCase();
-
 switch (week) {
     case 'sunday':
         alert(`It's Funday`);

@@ -64,7 +64,7 @@ let user;
 let count = 0;
 // console.log(random);
 do {
-    let user = +prompt('Enter Your Guesses Number.').match(/[1-10]/i);
+    let user = +prompt('Enter Your Guesses Number.');
     if (user === random) {
         alert(`✅ Correct Congrats You nailed it ${user === random}`);
     }
