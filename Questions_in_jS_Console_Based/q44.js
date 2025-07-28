@@ -1,4 +1,4 @@
-
+/*
 function guess() {
     let computerGuessed = Math.floor(Math.random() * 100 + 1);
 
@@ -57,4 +57,22 @@ function ogGuess(user) {
 
     }
     while (user != random && count != 5)
-}
+}*/
+
+let random = Math.floor(Math.random() * 10 + 1);
+let user;
+let count = 0;
+// console.log(random);
+do {
+    let user = +prompt('Enter Your Guesses Number.').match(/[1-10]/i);
+    if (user === random) {
+        alert(`✅ Correct Congrats You nailed it ${user === random}`);
+    }
+    else if (user > random) {
+        alert(`🔼 Too High`)
+    }
+    else if (user < random) {
+        alert('🔽 Too Low')
+    }
+    count++;
+} while (user != random, count <= 5);

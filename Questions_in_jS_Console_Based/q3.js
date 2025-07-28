@@ -13,13 +13,14 @@ r1.question("Enter the 1st no.", (a) => {
 
         const A = parseInt(a);
         const B = parseInt(b);
-        const sum = A + B;
-
-        console.log(sum);
+        maySUm(A, B);
         r1.close(); // if we did not pass this the node will wait for other input as well as.
     });
 });
 
+function maySUm(a, b) {
+    return console.log(a + b);
+}
 
 //const readline = require("readline")
 
