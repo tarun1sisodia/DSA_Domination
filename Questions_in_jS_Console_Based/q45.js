@@ -74,3 +74,4 @@ function elevatedHotel() {
 const food = elevatedHotel();
 
 food();
+food();

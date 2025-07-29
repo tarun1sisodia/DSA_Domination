@@ -1,25 +1,3 @@
-//Mirror Triangle
-
-function mirrorRightTriangle(n) {
-    let stars = "";
-    let spaces = "";
-
-    for (let i = 0; i <= n; i++) {
-        for (let j = 1; j <= n - i; j++) {
-            spaces += "_"
-            // console.log("_");
-
-        }
-        console.log(spaces);
-        for (let j = 1; j <= i; j++) {
-            stars += "*";
-            // console.log("*");
-        }
-        console.log(stars);
-
-    }
-}
-mirrorRightTriangle(5);
 
 /*
 
@@ -31,6 +9,8 @@ mirrorRightTriangle(5);
 
 */
 
+const { log } = require("node:console");
+
 //This is for X pattern
 function XPattern(n) {
     for (let i = 1; i <= n; i++) {
@@ -38,5 +18,24 @@ function XPattern(n) {
             i === j || i + j == n + 1 ? console.log("*") : console.log("");
         }
     }
+}
+
+/*
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+*/
+
+let n = 5;
+
+for (let i = 1; i <= n; i++) {
+    let num = "";
+    for (let j = 1; j <= i; j++) {
+        num += j + " ";
+
+    }
+    console.log(num);
 }
 
