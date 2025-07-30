@@ -1,24 +1,4 @@
 
-/*
-
-*  
-* *  
-* * *  
-* * * *  
-* * * * *  
-
-*/
-
-const { log } = require("node:console");
-
-//This is for X pattern
-function XPattern(n) {
-    for (let i = 1; i <= n; i++) {
-        for (let j = 0; j <= n; j++) {
-            i === j || i + j == n + 1 ? console.log("*") : console.log("");
-        }
-    }
-}
 
 /*
 1

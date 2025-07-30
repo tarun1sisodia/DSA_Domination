@@ -2,19 +2,19 @@
 
 function mirrorRightTriangle(n) {
     let stars = "";
-    let spaces = "";
+    let spaces = ".";
 
-    for (let i = 0; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         for (let j = 1; j <= n - i; j++) {
-            spaces += "_"
+            stars += spaces;
             // console.log("_");
 
         }
-        console.log(spaces);
-        for (let j = 1; j <= i; j++) {
+        for (let k = 1; k <= i; k++) {
             stars += "*";
             // console.log("*");
         }
+        // console.log(spaces);
         console.log(stars);
 
     }

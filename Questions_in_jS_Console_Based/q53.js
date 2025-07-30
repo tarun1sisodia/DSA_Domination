@@ -14,3 +14,12 @@ for (let i = 1; i <= n; i++) {
     // stars += "\n";
     console.log(stars);
 }
+/*
+
+ *   *
+  * * 
+   *  
+  * * 
+ *   *
+  
+ */
