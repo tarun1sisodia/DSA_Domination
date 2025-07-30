@@ -1,0 +1,2 @@
+//Inverted Right Triangle Pattern
+
