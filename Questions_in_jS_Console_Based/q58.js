@@ -61,7 +61,9 @@ let i = 0;
 let j = array.length - 1;
 let temp;
 while (i < j) {
+
     temp = array[i];
+    
     array[i] = array[j];
 
     array[j] = temp;

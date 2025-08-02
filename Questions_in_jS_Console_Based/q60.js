@@ -17,3 +17,4 @@ for (let i = 0; i < k; i++) {
     arr[n] = temp;
 }
 console.log(arr);
+
