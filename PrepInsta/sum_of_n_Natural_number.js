@@ -2,13 +2,15 @@
 const naturalSum = function (n) {
     let sum = 0;
     if (n > 0) {
+        console.log(`SHorCut to get : ${n * (n + 1) / 2}`);
+
         for (let i = 1; i <= n; i++) {
             sum += i;
         }
         console.log(sum);
     }
 }
-// naturalSum(3);
+naturalSum(3);
 
 
 const naturalSum2 = function (r, n) {
