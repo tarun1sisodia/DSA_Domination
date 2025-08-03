@@ -29,12 +29,10 @@ function checkPrime(n) {
 
         for (let i = 1; i <= newN; i++) {
             if (n % i === 0) {
-                console.log('Its not a prime number');
-
                 count++;
             }
 
-            else if(n % 2 != 0)
+            else if (n % 2 != 0)
                 console.log(`Its a prime ${n}`);
 
 
