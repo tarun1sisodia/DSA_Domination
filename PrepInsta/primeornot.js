@@ -33,8 +33,9 @@ function checkPrime(n) {
 
                 count++;
             }
-            // else
-            //     console.log(`Its a prime`);
+
+            else if(n % 2 != 0)
+                console.log(`Its a prime ${n}`);
 
 
         }
