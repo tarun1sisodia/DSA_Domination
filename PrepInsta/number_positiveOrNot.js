@@ -26,4 +26,7 @@ else if (n < 0)
 else if (n === 0)
     console.log(` N is Zero`);
 
+else
+    console.log('Something is wrong');
+    
 
