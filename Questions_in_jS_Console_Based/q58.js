@@ -58,6 +58,7 @@ let array = [10, 20, 30, 40, 50];
 
 
 let i = 0;
+
 let j = array.length - 1;
 let temp;
 while (i < j) {

@@ -30,6 +30,8 @@ arr[j] = temp;
 
 console.log(arr);
 
+
+//way to do..
 let first = arr.shift();
 
 arr.push(first);

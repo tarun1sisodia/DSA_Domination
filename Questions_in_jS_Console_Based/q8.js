@@ -22,6 +22,7 @@ function callCI(userPrincipal, userRate, userTime, userCompound) {
     const T = parseFloat(userTime);
     const N = parseFloat(userCompound);
     //Eq-1
+    
     const A = Math.round(P * Math.pow((1 + R / (N * 100)), N * T));
     //Eq-2
     const CI = Math.round(A - P);
