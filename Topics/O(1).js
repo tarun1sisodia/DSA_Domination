@@ -34,6 +34,13 @@ function findLargestNumber(arr) {
 let numbers = [10, 55, 23, 78, 12, 99, 4];
 console.log("Largest Number:", findLargestNumber(numbers));
 
+function getElement(arr, index) {
+    console.log(arr[index]);
+}
+
+let num = [10, 20, 30, 40, 50];
+getElement(num, 2); // Always O(1)
+
 
 
 
