@@ -1,3 +1,5 @@
+
+
 let arr = [10, 20, 30, 40];
 
 let n = arr.length;
@@ -9,6 +11,7 @@ let j = 0;
 for (let i = n - 1; i >= 0; i--) {
     
     newArray[j] = arr[i];
+
     j++;
 }
 
