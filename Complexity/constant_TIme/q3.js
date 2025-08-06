@@ -12,3 +12,13 @@ function evenOrOdd(a) {
         `Even: ${a}`) : console.log(
             ` Odd: ${a}`);
 }
+
+// 📌 Why it's O(1)
+
+// Ek modulus operation → constant time
+
+// Ek comparison → constant time
+
+// Ek print statement → constant time
+// Total: O(1)
+
