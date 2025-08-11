@@ -16,7 +16,7 @@ const power = function (a, b) {
         count = count * a;
 
         //Here you'll updated value with each new iteration.
-        console.log(count);
+        // console.log(count);
     }
 
     // Here you will direct see the final value..
@@ -27,3 +27,4 @@ const result = power(3, 4);
 console.log(`Result of ${3} ** ${4} is ${result}`);
 
 // console.log(power(3, 4));
+
