@@ -10,7 +10,6 @@ const findMin = function call(arr) {
             smallest = arr[i];
             index = i;
         }
-
     }
     console.log(`Main Array: ${arr} & Index: ${index} & Smallest: ${smallest}`);
 }
