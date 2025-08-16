@@ -1,3 +1,4 @@
+
 function countVowelsAndConsonants(str) {
     // Lowercase me convert taaki capital letters bhi handle ho jaye
     str = str.toLowerCase();
@@ -9,7 +10,7 @@ function countVowelsAndConsonants(str) {
         let ch = str[i];
 
         // Check agar letter hai
-        if (ch >= 'a' && ch <= 'z') {
+        if (ch >= 'a' && ch <= 'z') { // also we can use ch >= 65
             // Vowel check
             if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u') {
                 vowelCount++;

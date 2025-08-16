@@ -60,7 +60,7 @@ function KrightShiftRotation(k) {
     k = Math.floor(k % n);
 
     for (let j = 0; j <= k; j++) {
-        temp = arr[n];
+        let temp = arr[n];
         for (let i = n; i > 0; i--) {
             arr[i] = arr[i - 1]
         }
@@ -70,3 +70,25 @@ function KrightShiftRotation(k) {
 
 }
 KrightShiftRotation(3);
+
+let arr = [1, 2, 3, 4, 5];
+let temp = arr[0];
+for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i + 1];
+}
+arr[arr.length - 1] = temp;
+console.log(arr);
+
+
+let cristian = [1, 2, 4, 5];
+console.log(cristian);
+let k = 1;
+k = k % cristian.length - 1;
+for (let i = 0; i <= k; i++) {
+    let temp = cristian[0];
+    for (let i = 0; i < cristian.length-1; i++) {
+        cristian[i] = cristian[i + 1];
+    }
+    cristian[cristian.length - 1] = temp;
+}
+console.log(cristian);

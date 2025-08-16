@@ -18,3 +18,17 @@ while (start < end) {
 
 }
 console.log(arr);
+
+
+let tarun = ['Radhika', 'Gunjan', 'Kashish', 'Anuradha', 'Muskan'];
+//              Muskan, Anuradha, Kashish, Gunjan, Radhika
+
+// let size = tarun.length - 1;
+// let i = 0;
+// while (tarun[i] < tarun[tarun.length - 1]) {
+
+//     [tarun[i], tarun[tarun.length - 1 - i]] = [tarun[tarun.length - 1 - i], tarun[i]];
+//     i++;
+// }
+// console.log(tarun);
+// console.log(`Array Length -1: ${tarun.length - 1}`);
