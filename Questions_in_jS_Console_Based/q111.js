@@ -5,6 +5,7 @@ function frequency(str) {
      for (let i = 0; i < 128; i++) {
          arr[i] = 0;
      } */
+    
     let arr = new Array(128).fill(0);
     // console.log(arr);
     for (let i = 0; i < str.length; i++) {
