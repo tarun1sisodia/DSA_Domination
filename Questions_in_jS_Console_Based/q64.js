@@ -2,6 +2,11 @@
 
 let arr = [6, 14, 3, 10, 18];
 let n = arr.length - 1;
+// let n1 = arr.length;
+// console.log(n);
+// console.log(n1);
+
+
 // for Phasing 
 for (let i = 0; i < n; i++) {
 
@@ -21,3 +26,4 @@ function swap(arr, i, j) {
     arr[j] = arr[j + 1];
     arr[j + 1] = temp;
 }
+

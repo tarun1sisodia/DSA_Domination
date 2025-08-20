@@ -7,6 +7,7 @@ function frequency(str) {
      } */
     
     let arr = new Array(128).fill(0);
+    
     // console.log(arr);
     for (let i = 0; i < str.length; i++) {
         let ch = str.charCodeAt(i);
@@ -18,4 +19,5 @@ function frequency(str) {
         }
     }
 }
+
 frequency("TarunSisodiaThakur")

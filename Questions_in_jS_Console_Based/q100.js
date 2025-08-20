@@ -3,21 +3,27 @@ function zeroMatrix(matrix) {
     let rows = matrix.length;
     let cols = matrix[0].length;
 
-    let flagRows = [];
-    let flagCols = [];
-    //Creating 2d Array for boolean true or false to marks array.
-    for (let i = 0; i < rows; i++) {
-        flagRows[i] = false;
-    }
-    for (let j = 0; j < cols; j++) {
+    let flagRows = new Array(rows).fill(false);
+    // let flagRows = [];
+    // let flagCols = [];
+    let flagCols = new Array(cols).fill(false);
 
-        flagCols[j] = false;
-    }
+
+    //Trick to make an array.
+    //Creating 2d Array for boolean true or false to marks array.
+    /*  for (let i = 0; i < rows; i++) {
+         flagRows[i] = false; // for all rows element it will be false; by default.
+     }
+     for (let j = 0; j < cols; j++) {
+         flagCols[j] = false; //it will also false the whole columns.
+     } */
+
+
 
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
-            if (matrix[i][j] === 0) {
-                flagRows[i] = true;
+            if (matrix[i][j] === 0) { //pehle hum search to krle ki koi element 0 h bhi ki nhi ..
+                flagRows[i] = true; //now hum us row aur col ko mark kr rhe h true h ki nh taki future m usko update kr sake.
                 flagRows[j] = true;
             }
         }
@@ -25,7 +31,7 @@ function zeroMatrix(matrix) {
 
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
-            if (flagRows[i] || flagCols[j]) {
+            if (flagRows[i] || flagCols[j]) { //agr true h to us matrix ki element rows and col ko 0 krdo.
                 matrix[i][j] = 0;
             }
         }

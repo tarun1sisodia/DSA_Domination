@@ -12,13 +12,12 @@ function rotate90(mat) {
     // Step 2: Fill rotated values
     for (let rows = 0; rows < n; rows++) {
         for (let cols = 0; cols < n; cols++) {
-
             res[cols][n - rows - 1] = mat[rows][cols];
         }
     }
-
     return res;
 }
+
 
 function areSame(mat1, mat2) {
     for (let rows = 0; rows < mat1.length; rows++) {
@@ -28,6 +27,7 @@ function areSame(mat1, mat2) {
     }
     return true;
 }
+
 
 function findRotation(mat, target) {
     for (let r = 0; r < 4; r++) { // at most 4 rotations to return to original
