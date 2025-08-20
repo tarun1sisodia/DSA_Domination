@@ -9,7 +9,6 @@ async function streamCompletion() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGM2NmE1ZC1iNjE1LTRkMTItOWJiMy01M2ZjYTFkZmRhODEiLCJlbWFpbCI6IndhcnBjaGFyb25AZ21haWwuY29tIiwia2V5SWQiOiI1MmE2OTk4MS0yMjc1LTQ3ZDctODI1Mi1iMWFlYTVmZTkxNDQiLCJ0eXBlIjoiYXBpX2tleSIsImlhdCI6MTc1NTU0Mzk0Nn0.Pc_vLJWAps73VT8xXzOh17ZCHQN8zHahUKaQU1E-iBE'
             },
             body: JSON.stringify({
                 messages: [
