@@ -11,9 +11,12 @@
 let str = "TarunSisodia".toLowerCase();
 let count = 0;
 let vowels = ['a', 'e', 'i', 'o', 'u'];
-
+let conso = 0;
 for (let char of str) {
     if (vowels.includes(char)) count++;
+    else
+        conso++;
 }
 
 console.log(count); // 6
+console.log(conso); 

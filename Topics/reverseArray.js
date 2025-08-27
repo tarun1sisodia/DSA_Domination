@@ -143,6 +143,8 @@ function duplication() {
     }
     return false;
 }
+
+
 console.log(duplication());
 
 function checkDupli() {
