@@ -5,20 +5,22 @@
 //     console.log(char(i)+"");
 
 // }
-
-// let name = "Tarun";
-
-// let str = "";
-
-// for (let i = 0; i < name.length; i++) {
-//     let ch = name.charAt(i);
-//     if (ch >= 'a' && ch <= 'z') {
-//         str = str + charAt(ch - 32);
-//     }
-//     else
-//         str = str + charAt(ch + 32);
-// }
-// console.log(name);
+function convert() {
+    let name = "Tarun";
+    let str = "";
+    for (let i = 0; i < name.length; i++) {
+        let ch = name.charAt(i);
+        let code = name.charCodeAt(i);
+        if (ch >= 'a' && ch <= 'z') {
+            str = str + String.fromCharCode(code - 32);
+        }
+        else if (ch >= 'A' && ch <= 'Z') {
+            str = str + String.fromCharCode(code + 32);
+        }
+    }
+    return str;
+}
+console.log(convert());
 // console.log(str);
 
 
