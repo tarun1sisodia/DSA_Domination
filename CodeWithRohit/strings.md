@@ -1,11 +1,11 @@
-```
+
 ### 🔹 String Questions for Practice in JavaScript
 
 **DSA-Oriented**
 
-1. Count the number of vowels in a string.
-2. Reverse a string without using `.reverse()`.
-3. Check if a string is a palindrome.
+1. Count the number of vowels in a string.  **Done**
+2. Reverse a string without using `.reverse()`.  **Done**
+3. Check if a string is a palindrome. **Done**
 4. Find the length of the longest word in a sentence.
 5. Find the most frequent character in a string.
 6. Count how many times each character appears in a string.
@@ -27,4 +27,3 @@
 9. Create a function that masks all but the last 4 digits of a credit card number.
 10. Build a function that repeats a given string `n` times without using `.repeat()`.
 
-```
