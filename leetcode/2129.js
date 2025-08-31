@@ -9,13 +9,16 @@ function sentence(str) {
     let arr = str.split(" ");
     for (let i = 0; i < arr.length; i++) {
         let word = arr[i];
-        if (word.length > 0) {
+        if (word.length >= 1 || word.length < 2) {
+            arr[i] = word.toLowerCase();
+        }
+        if (word.length > 2) {
             arr[i] = word[0].toUpperCase() + word.substring(1).toLowerCase();
         }
     }
     return arr;
 }
-let str = "hello tarun bro kesa h";
+let str = "YO YO kesa ho tarun ";
 console.log(sentence(str));
 
 
