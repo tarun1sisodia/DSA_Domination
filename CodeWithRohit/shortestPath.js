@@ -3,7 +3,7 @@ function shortestPath(path) {
     path = path.toUpperCase();
     let x = 0, y = 0;
     for (let i = 0; i < n; i++) {
-        let dir = path.charAt(i);
+        /* let dir = path.charAt(i);
         if (dir === 'N') {
             y++;
         }
@@ -15,6 +15,13 @@ function shortestPath(path) {
         }
         else {
             x--;
+        } */
+
+        switch (path.charAt(i)) {
+            case 'N': y++; break;
+            case 'S': y--; break;
+            case 'E': x++; break;
+            default: x--; break;
         }
     }
     let x2 = x * x;
