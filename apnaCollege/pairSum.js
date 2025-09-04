@@ -29,7 +29,6 @@ function sortedPairSumOptimize(arr, target) {
     let j = n;
     while (i < j) {
         let pairSum = arr[i] + arr[j];
-
         if (pairSum > target) j--;
         else if (pairSum < target) i++;
         else return { i, j };
