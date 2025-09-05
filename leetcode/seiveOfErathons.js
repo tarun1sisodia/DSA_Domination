@@ -5,8 +5,8 @@ soe[0] = false;
 soe[1] = false;
 
 for (let i = 2; i <= Math.floor(Math.sqrt(n)); i++) {
-    if (soe[i]) {
-        for (let j = i * i; j <= n; j += i) {
+    if (soe[i]) { //by default true hogi sari soe array
+        for (let j = i * i; j <= n; j += i) { // sare multiples of i will be marked false;
             soe[j] = false;  // mark multiples of i
         }
     }
