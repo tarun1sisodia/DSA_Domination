@@ -25,7 +25,7 @@ function linear(arr, key, n) {
 function binary(arr, key, n) {
     let start = 0;
     let end = n-1;
-    while (start <= end) {
+    while (start < end) {
         let mid = Math.floor(start + (end - start) / 2);
         if (arr[mid] === key) {
             return mid;
