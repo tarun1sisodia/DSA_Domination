@@ -7,7 +7,7 @@ function brutePairSum(arr, target) {
     for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] === target) {
-                ans.push(arr[i]);
+                ans.push(arr[i]); // we are passing the value from arr of i.
                 ans.push(arr[j]);
                 return { i, j }; // if you want the index of elements.
                 return ans; //always will be given.
