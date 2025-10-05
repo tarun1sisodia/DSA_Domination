@@ -33,8 +33,8 @@ Pattern recognition and implementation:
 - [`p1.js`](Pattern_Find/p1.js) - Pattern solving algorithms
 
 ### 💻 **leetcode/**
-LeetCode problem solutions:
-- [`binary_Search&BubbleSort.js`](leetcode/binary_Search&BubbleSort.js) - Search and sorting algorithms
+My Profile: 
+- [`tarun1sisodia`](leetcode.com/tarun1sisodia) - Search and sorting algorithms
 
 ### 🌐 **Questions_in_JS_Browser/** & **Questions_in_jS_Console_Based/**
 JavaScript problems categorized by execution environment:
