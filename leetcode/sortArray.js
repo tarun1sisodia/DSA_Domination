@@ -72,4 +72,4 @@ function checkSor(arr) {
   return "Issue: Only zeros are moved to the front, 1s are not handled. Also, loop misses the last element.";
 }
 
-console.log(checkSor([0, 1, 2, 0, 1, 1, 1, 2, 2, 0, 1, 0, 0]));
+console.log(checkSor([0, 1, 2, 0, 1, 0, 0]));
