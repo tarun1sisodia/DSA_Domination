@@ -137,18 +137,20 @@ console.log(
 var trap = function (arr) {
   let n = arr.length;
   if (n === 0) return 0;
-
+  // New Array to Store left & Right
   let leftMax = new Array(n);
   let rightMax = new Array(n);
 
-  // Fill leftMax
+  // Fill leftMax with intial value
   leftMax[0] = arr[0];
+  //
   for (let i = 1; i < n; i++) {
     leftMax[i] = Math.max(leftMax[i - 1], arr[i]);
   }
 
-  // Fill rightMax
+  // Fill rightMax with initial value
   rightMax[n - 1] = arr[n - 1];
+  // 
   for (let i = n - 2; i >= 0; i--) {
     rightMax[i] = Math.max(rightMax[i + 1], arr[i]);
   }
