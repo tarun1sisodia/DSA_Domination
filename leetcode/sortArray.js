@@ -41,26 +41,28 @@ console.log(checkSortIssue([0, 1, 0, 1, 1, 1, 0, 1, 0, 0]));
 
 function checkSor(arr) {
   if (!Array.isArray(arr)) throw new TypeError("arr must be an array");
-
+  // Declare the variales
   let i = 0,
     j = 0,
     k = arr.length - 1;
-  while (i < k) {
-    for (i; i < arr.length; i++) {
-      if (arr[i] === 1) continue;
-      if (arr[i] === 0) {
-        const temp = arr[j];
-        arr[j] = arr[i];
-        arr[i] = temp;
-        j++;
-      }
-      if (arr[i] === 2) {
-        const temp = arr[k];
-        arr[k] = arr[i];
-        arr[i] = temp;
-        k--;
-        i--;
-      }
+  // checking if i is less than k or not for always....
+
+  while (i <= k) {
+    // running for from i -> length
+
+    // if we found 1 in array then just continue the code and go to next iteration...
+    if (arr[i] === 1) i++;
+    // check to find 0 if found then swap current var with j which is working with 0 to store them at first..
+    else if (arr[i] === 0) {
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+      // updating j because we have just set the j and i using swap..
+
+      i++;
+      j++;
+    } else if (arr[i] === 2) {
+      // now this time we will just update both k and i becuase we found 2 and update k-- because we are goind in right to left side so we need to minus k and update i for left to right...
+      [arr[i], arr[k]] = [arr[k], arr[i]];
+      k--;
     }
   }
   // After the loop, only the first `j` indices are set to zero.
@@ -70,4 +72,4 @@ function checkSor(arr) {
   return "Issue: Only zeros are moved to the front, 1s are not handled. Also, loop misses the last element.";
 }
 
-console.log(checkSor([0, 1, 0, 1, 1, 1, 2, 2, 0, 1, 0, 0]));
+console.log(checkSor([0, 1, 2, 0, 1, 1, 1, 2, 2, 0, 1, 0, 0]));
