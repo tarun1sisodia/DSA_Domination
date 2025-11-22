@@ -8,6 +8,14 @@ var minEatingSpeed = function(piles, h) {
     function isValid(piles, currentSpeed, h){
         let hours = 0;
         for(let i = 0; i < piles.length; i++){
+            // using Math.ceil to round up the hours needed for each pile at current speed of eating bananas 
+            // because Koko can't eat partial bananas in an hour
+            // each pile will take ceil(pileSize / currentSpeed) hours to finish
+            // for example, if pile size is 10 and speed is 3, it will take ceil(10/3) = 4 hours
+            // similarly, if pile size is 5 and speed is 2, it will take ceil(5/2) = 3 hours
+            // thus we sum up all these hours to get total hours needed at current speed
+            // this helps us determine if Koko can finish all piles within h hours at this speed
+            // this is crucial for the binary search logic to find the minimum valid speed
             hours += Math.ceil(piles[i] / currentSpeed);
         }
         return hours <= h;
