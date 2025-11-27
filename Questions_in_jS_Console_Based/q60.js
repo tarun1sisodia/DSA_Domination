@@ -6,8 +6,12 @@ function Rotation() {
 
     let n = arr.length - 1;
 
+    // For reducing the operation if the number can be divided..
     k = k % n;
-
+    // If K === n meands length is 5 and k for rotation is also 5 then no need to travese just reverse.
+    if(k === n){
+        return arr;
+    }
     for (let i = 0; i < k; i++) {
         let temp = arr[0];
 
