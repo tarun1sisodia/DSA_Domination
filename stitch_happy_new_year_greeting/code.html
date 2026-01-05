@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Happy New Year Surprise</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7f13ec",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191022",
+                        "surface-dark": "#261a30",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased overflow-x-hidden transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-6 py-4 lg:px-40">
+<div class="flex items-center gap-4 text-white">
+<div class="flex items-center justify-center size-10 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-2xl">celebration</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">New Year Surprise</h2>
+</div>
+<button class="flex items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-surface-dark hover:bg-primary/20 transition-colors text-white">
+<span class="material-symbols-outlined text-xl">music_note</span>
+</button>
+</header>
+<!-- Main Content Layout -->
+<main class="flex-1 flex flex-col items-center justify-center px-6 py-10 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1 justify-center">
+<div class="@container">
+<div class="flex flex-col-reverse lg:flex-row gap-10 lg:gap-16 items-center">
+<!-- Left Content: Text & CTA -->
+<div class="flex flex-col gap-6 flex-1 text-left items-start w-full">
+<div class="flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 self-start">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">It's Official</span>
+</div>
+<h1 class="text-white text-5xl font-black leading-[1.1] tracking-[-0.033em] lg:text-7xl">
+                                    Happy New Year,<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Sarah!</span>
+</h1>
+<h2 class="text-slate-400 text-lg font-medium leading-normal max-w-md">
+                                    Here’s to another year of creating beautiful memories together. I made this little place just for you.
+                                </h2>
+</div>
+<!-- Timer (Static for New Year Arrival) -->
+<div class="flex gap-3 py-2 w-full max-w-[400px]">
+<div class="flex grow basis-0 flex-col items-center gap-1 p-2 rounded-lg bg-surface-dark border border-white/5">
+<p class="text-white text-xl font-bold leading-tight">00</p>
+<p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Days</p>
+</div>
+<div class="flex grow basis-0 flex-col items-center gap-1 p-2 rounded-lg bg-surface-dark border border-white/5">
+<p class="text-white text-xl font-bold leading-tight">00</p>
+<p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Hrs</p>
+</div>
+<div class="flex grow basis-0 flex-col items-center gap-1 p-2 rounded-lg bg-surface-dark border border-white/5">
+<p class="text-white text-xl font-bold leading-tight">00</p>
+<p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Mins</p>
+</div>
+<div class="flex grow basis-0 flex-col items-center gap-1 p-2 rounded-lg bg-surface-dark border border-white/5">
+<p class="text-white text-xl font-bold leading-tight">00</p>
+<p class="text-slate-400 text-[10px] uppercase font-bold tracking-wider">Secs</p>
+</div>
+</div>
+<button class="group flex min-w-[180px] cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl h-14 px-8 bg-primary hover:bg-primary/90 transition-all text-white text-base font-bold shadow-lg shadow-primary/25 mt-4">
+<span class="truncate">Unlock Your Surprise</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">auto_awesome</span>
+</button>
+</div>
+<!-- Right Content: Hero Image -->
+<div class="w-full lg:w-[45%] flex justify-center">
+<div class="relative w-full aspect-[4/5] max-w-md rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10 group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transform transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of a smiling young woman with festive bokeh lights in the background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_wosjgmSR9CsAvjR0c_lcxrIKyNtBuHzB0C9vCPqUMeAwZMcq8xcVU_DReGVUbl9an6_OZIEhiHH2kUY4ofptf79xnM6_Ytq06qplh3WRPB-IpTQZywX0bQOsvCVDjaDDeHJ_TMhZx_cjKeO5_ooakq98U4vQRc_QlD0WFB4lIgigCgUqZbpeelqTYcWUSiScL5nQct0w7naSDAcQwgsswWUFFu44sL9ho_66evTKvPY1ccDH86HkJmsRcc-xDb7iDtul8cUUQUTc");'>
+</div>
+<!-- Decorative Elements on Image -->
+<div class="absolute bottom-6 left-6 z-20">
+<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 inline-flex items-center gap-3">
+<div class="bg-primary p-1.5 rounded-full text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</div>
+<div>
+<p class="text-white text-xs font-bold">Best Year Yet</p>
+<p class="text-white/70 text-[10px]">Just started</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col gap-6 px-5 py-8 text-center border-t border-white/5 bg-background-dark/50 backdrop-blur-sm">
+<p class="text-slate-500 text-sm font-medium">Made with ❤️ for you</p>
+</footer>
+</div>
+</body></html>
