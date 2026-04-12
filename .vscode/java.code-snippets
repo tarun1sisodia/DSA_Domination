@@ -1,0 +1,493 @@
+{
+    "Main Method": {
+        "prefix": "main",
+        "body": [
+            "public static void main(String[] args) {",
+            "    $1",
+            "}"
+        ]
+    },
+    "Scanner Setup": {
+        "prefix": "scan",
+        "body": [
+            "Scanner sc = new Scanner(System.in);"
+        ]
+    },
+    "Fast Input Template (BufferedReader)": {
+        "prefix": "fastin",
+        "body": [
+            "BufferedReader br = new BufferedReader(new InputStreamReader(System.in));",
+            "String[] input = br.readLine().split(\" \");",
+            "int $1 = Integer.parseInt(input[0]);"
+        ]
+    },
+    "Fast I/O (StringTokenizer + PrintWriter)": {
+        "prefix": "fastio",
+        "body": [
+            "BufferedReader br = new BufferedReader(new InputStreamReader(System.in));",
+            "PrintWriter out = new PrintWriter(System.out);",
+            "StringTokenizer st = new StringTokenizer(br.readLine());",
+            "int $1 = Integer.parseInt(st.nextToken());",
+            "out.println($1);",
+            "out.flush();"
+        ]
+    },
+    "Print Line": {
+        "prefix": "sout",
+        "body": [
+            "System.out.println($1);"
+        ]
+    },
+    "Print Inline": {
+        "prefix": "soutp",
+        "body": [
+            "System.out.print($1);"
+        ]
+    },
+    "For Loop (int i)": {
+        "prefix": "fori",
+        "body": [
+            "for (int i = 0; i < $1; i++) {",
+            "    $2",
+            "}"
+        ]
+    },
+    "Enhanced For Loop (foreach)": {
+        "prefix": "fore",
+        "body": [
+            "for ($1 $2 : $3) {",
+            "    $4",
+            "}"
+        ]
+    },
+    "Reverse For Loop": {
+        "prefix": "forr",
+        "body": [
+            "for (int i = $1; i >= 0; i--) {",
+            "    $2",
+            "}"
+        ]
+    },
+    "While Loop": {
+        "prefix": "while",
+        "body": [
+            "while ($1) {",
+            "    $2",
+            "}"
+        ]
+    },
+    "Do-While Loop": {
+        "prefix": "dowhile",
+        "body": [
+            "do {",
+            "    $1",
+            "} while ($2);"
+        ]
+    },
+    "If Condition": {
+        "prefix": "if",
+        "body": [
+            "if ($1) {",
+            "    $2",
+            "}"
+        ]
+    },
+    "If Else": {
+        "prefix": "ifelse",
+        "body": [
+            "if ($1) {",
+            "    $2",
+            "} else {",
+            "    $3",
+            "}"
+        ]
+    },
+    "Switch Case": {
+        "prefix": "switch",
+        "body": [
+            "switch ($1) {",
+            "    case $2:",
+            "        $3",
+            "        break;",
+            "    default:",
+            "        break;",
+            "}"
+        ]
+    },
+    "Function Template": {
+        "prefix": "func",
+        "body": [
+            "static $1 $2($3) {",
+            "    $4",
+            "}"
+        ]
+    },
+    "Return Statement": {
+        "prefix": "ret",
+        "body": [
+            "return $1;"
+        ]
+    },
+    "Max of Two Numbers": {
+        "prefix": "max",
+        "body": [
+            "int max = ($1 > $2) ? $1 : $2;"
+        ]
+    },
+    "Min of Two Numbers": {
+        "prefix": "min",
+        "body": [
+            "int min = ($1 < $2) ? $1 : $2;"
+        ]
+    },
+    "Array Input (from Scanner)": {
+        "prefix": "arrin",
+        "body": [
+            "int n = sc.nextInt();",
+            "int[] arr = new int[n];",
+            "for (int i = 0; i < n; i++) {",
+            "    arr[i] = sc.nextInt();",
+            "}"
+        ]
+    },
+    "Array Print": {
+        "prefix": "arrout",
+        "body": [
+            "for (int i = 0; i < arr.length; i++) {",
+            "    System.out.print(arr[i] + \" \" );",
+            "}"
+        ]
+    },
+    "Sum of Array": {
+        "prefix": "arrsum",
+        "body": [
+            "int sum = 0;",
+            "for (int i = 0; i < arr.length; i++) {",
+            "    sum += arr[i];",
+            "}"
+        ]
+    },
+    "2D Array Declaration & Input": {
+        "prefix": "arr2d",
+        "body": [
+            "int rows = $1, cols = $2;",
+            "int[][] matrix = new int[rows][cols];",
+            "for (int i = 0; i < rows; i++) {",
+            "    for (int j = 0; j < cols; j++) {",
+            "        matrix[i][j] = sc.nextInt();",
+            "    }",
+            "}"
+        ]
+    },
+    "2D Array Print": {
+        "prefix": "arr2dout",
+        "body": [
+            "for (int i = 0; i < matrix.length; i++) {",
+            "    for (int j = 0; j < matrix[0].length; j++) {",
+            "        System.out.print(matrix[i][j] + \" \" );",
+            "    }",
+            "    System.out.println();",
+            "}"
+        ]
+    },
+    "Try Catch": {
+        "prefix": "try",
+        "body": [
+            "try {",
+            "    $1",
+            "} catch (Exception e) {",
+            "    e.printStackTrace();",
+            "}"
+        ]
+    },
+    "Class Template": {
+        "prefix": "class",
+        "body": [
+            "class $1 {",
+            "    $2",
+            "}"
+        ]
+    },
+    "List Declaration": {
+        "prefix": "list",
+        "body": [
+            "List<$1> list = new ArrayList<>();"
+        ]
+    },
+    "Map Declaration": {
+        "prefix": "map",
+        "body": [
+            "Map<$1, $2> map = new HashMap<>();"
+        ]
+    },
+    "Set Declaration": {
+        "prefix": "set",
+        "body": [
+            "Set<$1> set = new HashSet<>();"
+        ]
+    },
+    "Stack (Deque)": {
+        "prefix": "stack",
+        "body": [
+            "Deque<$1> stack = new ArrayDeque<>();"
+        ]
+    },
+    "Queue (Deque)": {
+        "prefix": "queue",
+        "body": [
+            "Deque<$1> queue = new ArrayDeque<>();"
+        ]
+    },
+    "PriorityQueue (Min-Heap)": {
+        "prefix": "pqmin",
+        "body": [
+            "PriorityQueue<$1> pq = new PriorityQueue<>();"
+        ]
+    },
+    "PriorityQueue (Max-Heap)": {
+        "prefix": "pqmax",
+        "body": [
+            "PriorityQueue<$1> pq = new PriorityQueue<>(Collections.reverseOrder());"
+        ]
+    },
+    "Sort Array": {
+        "prefix": "sort",
+        "body": [
+            "Arrays.sort(arr);"
+        ]
+    },
+    "Comparator Sort (Lambda)": {
+        "prefix": "sortc",
+        "body": [
+            "Arrays.sort(arr, (a, b) -> a - b);"
+        ]
+    },
+    "Binary Search (built-in)": {
+        "prefix": "binsearch",
+        "body": [
+            "int idx = Arrays.binarySearch(arr, $1);"
+        ]
+    },
+    "StringBuilder": {
+        "prefix": "sb",
+        "body": [
+            "StringBuilder sb = new StringBuilder();"
+        ]
+    },
+    "String to Int": {
+        "prefix": "stoi",
+        "body": [
+            "int num = Integer.parseInt($1);"
+        ]
+    },
+    "Int to String": {
+        "prefix": "itos",
+        "body": [
+            "String str = Integer.toString($1);"
+        ]
+    },
+    "Read Entire File": {
+        "prefix": "readfile",
+        "body": [
+            "List<String> lines = Files.readAllLines(Paths.get(\"$1\"));"
+        ]
+    },
+    "Write to File": {
+        "prefix": "writefile",
+        "body": [
+            "Files.write(Paths.get(\"$1\"), $2.getBytes());"
+        ]
+    },
+    "Lambda Expression": {
+        "prefix": "lambda",
+        "body": [
+            "($1) -> $2"
+        ]
+    },
+    "Stream Filter & Collect": {
+        "prefix": "stream",
+        "body": [
+            "list.stream()",
+            "    .filter($1 -> $2)",
+            "    .collect(Collectors.toList());"
+        ]
+    },
+    "Optional ofNullable": {
+        "prefix": "optional",
+        "body": [
+            "Optional<$1> opt = Optional.ofNullable($2);",
+            "opt.ifPresent($3 -> { $4 });"
+        ]
+    },
+    "Thread (Runnable)": {
+        "prefix": "thread",
+        "body": [
+            "Thread t = new Thread(() -> {",
+            "    $1",
+            "});",
+            "t.start();"
+        ]
+    },
+    "GCD (Euclidean)": {
+        "prefix": "gcd",
+        "body": [
+            "int gcd(int a, int b) {",
+            "    return b == 0 ? a : gcd(b, a % b);",
+            "}"
+        ]
+    },
+    "LCM": {
+        "prefix": "lcm",
+        "body": [
+            "int lcm(int a, int b) {",
+            "    return a / gcd(a, b) * b;",
+            "}"
+        ]
+    },
+    "Prime Check": {
+        "prefix": "isprime",
+        "body": [
+            "boolean isPrime(int n) {",
+            "    if (n < 2) return false;",
+            "    for (int i = 2; i * i <= n; i++)",
+            "        if (n % i == 0) return false;",
+            "    return true;",
+            "}"
+        ]
+    },
+    "Factorial (Iterative)": {
+        "prefix": "fact",
+        "body": [
+            "long fact = 1;",
+            "for (int i = 2; i <= $1; i++) fact *= i;"
+        ]
+    },
+    "Fast Power (Exponentiation)": {
+        "prefix": "powmod",
+        "body": [
+            "long powMod(long a, long b, long mod) {",
+            "    long res = 1;",
+            "    while (b > 0) {",
+            "        if ((b & 1) == 1) res = res * a % mod;",
+            "        a = a * a % mod;",
+            "        b >>= 1;",
+            "    }",
+            "    return res;",
+            "}"
+        ]
+    },
+    "Sliding Window Template": {
+        "prefix": "slidewin",
+        "body": [
+            "int left = 0, right = 0;",
+            "while (right < n) {",
+            "    // add arr[right] to window",
+            "    right++;",
+            "    while (/* window condition invalid */) {",
+            "        // remove arr[left] from window",
+            "        left++;",
+            "    }",
+            "    // update answer with window [left, right)",
+            "}"
+        ]
+    },
+    "Prefix Sum Array": {
+        "prefix": "prefix",
+        "body": [
+            "int[] prefix = new int[n + 1];",
+            "for (int i = 0; i < n; i++) {",
+            "    prefix[i + 1] = prefix[i] + arr[i];",
+            "}"
+        ]
+    },
+    "Two Pointers (Sorted Array)": {
+        "prefix": "twoptr",
+        "body": [
+            "int i = 0, j = arr.length - 1;",
+            "while (i < j) {",
+            "    int sum = arr[i] + arr[j];",
+            "    if (sum == target) {",
+            "        // found",
+            "        break;",
+            "    } else if (sum < target) i++;",
+            "    else j--;",
+            "}"
+        ]
+    },
+    "Binary Search Template (Custom)": {
+        "prefix": "binsearchc",
+        "body": [
+            "int lo = 0, hi = n - 1;",
+            "while (lo <= hi) {",
+            "    int mid = lo + (hi - lo) / 2;",
+            "    if (arr[mid] == target) {",
+            "        // found",
+            "        break;",
+            "    } else if (arr[mid] < target) lo = mid + 1;",
+            "    else hi = mid - 1;",
+            "}"
+        ]
+    },
+    "BFS on Grid": {
+        "prefix": "bfs",
+        "body": [
+            "int[] dr = {-1, 1, 0, 0};",
+            "int[] dc = {0, 0, -1, 1};",
+            "Queue<int[]> q = new ArrayDeque<>();",
+            "q.offer(new int[]{startR, startC});",
+            "boolean[][] visited = new boolean[rows][cols];",
+            "visited[startR][startC] = true;",
+            "while (!q.isEmpty()) {",
+            "    int[] curr = q.poll();",
+            "    int r = curr[0], c = curr[1];",
+            "    for (int i = 0; i < 4; i++) {",
+            "        int nr = r + dr[i], nc = c + dc[i];",
+            "        if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && !visited[nr][nc]) {",
+            "            visited[nr][nc] = true;",
+            "            q.offer(new int[]{nr, nc});",
+            "        }",
+            "    }",
+            "}"
+        ]
+    },
+    "DFS on Grid (Recursive)": {
+        "prefix": "dfs",
+        "body": [
+            "void dfs(int r, int c, boolean[][] visited) {",
+            "    if (r < 0 || r >= rows || c < 0 || c >= cols || visited[r][c]) return;",
+            "    visited[r][c] = true;",
+            "    dfs(r + 1, c, visited);",
+            "    dfs(r - 1, c, visited);",
+            "    dfs(r, c + 1, visited);",
+            "    dfs(r, c - 1, visited);",
+            "}"
+        ]
+    },
+    "Backtracking Template": {
+        "prefix": "backtrack",
+        "body": [
+            "void backtrack(List<List<Integer>> result, List<Integer> temp, int[] nums, int start) {",
+            "    result.add(new ArrayList<>(temp));",
+            "    for (int i = start; i < nums.length; i++) {",
+            "        temp.add(nums[i]);",
+            "        backtrack(result, temp, nums, i + 1);",
+            "        temp.remove(temp.size() - 1);",
+            "    }",
+            "}"
+        ]
+    },
+    "DP Memoization Template": {
+        "prefix": "dpmemo",
+        "body": [
+            "int[] memo = new int[n];",
+            "Arrays.fill(memo, -1);",
+            "int dp(int i) {",
+            "    if (i >= n) return 0;",
+            "    if (memo[i] != -1) return memo[i];",
+            "    int res = /* recurrence */;",
+            "    memo[i] = res;",
+            "    return res;",
+            "}"
+        ]
+    }
+}
