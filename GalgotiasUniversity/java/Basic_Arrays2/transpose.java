@@ -24,12 +24,15 @@ class Main {
 
         for(int i = 0; i < row; i++) {
             for(int j = 0; j < col; j++) {
+                // row -> mat[i].length
+                // col -> temp[j].length
                 temp[j][i] = mat[i][j];
             }
         }
 
         System.out.println("Original Matrix:");
         for(int i = 0; i < row; i++) {
+            // col -> mat[0].length or mat[i].length
             for(int j = 0; j < col; j++) {
                 System.out.print(mat[i][j] + " ");
             }
