@@ -1,53 +1,49 @@
 class MaxMin {
+    // Helper method to update the top 2 maximums
+    // max[0] is the largest, max[1] is the second largest
+    static void updateMax(int[] max, int val) {
+        if (val > max[0]) {
+            max[1] = max[0];
+            max[0] = val;
+        } else if (val > max[1] && val != max[0]) {
+            max[1] = val;
+        }
+    }
+
+    // Helper method to update the top 2 minimums
+    // min[0] is the smallest, min[1] is the second smallest
+    static void updateMin(int[] min, int val) {
+        if (val < min[0]) {
+            min[1] = min[0];
+            min[0] = val;
+        } else if (val < min[1] && val != min[0]) {
+            min[1] = val;
+        }
+    }
+
     public static void main(String[] args) {
-        int arr[] = {34,79,7,65,4,6,5,5,6,54,3};
+        int[] arr = {34, 79, 7, 65, 4, 6, 5, 5, 6, 54, 3};
 
-        int MaxEven = Integer.MIN_VALUE;
-        int MaxEven2 = Integer.MIN_VALUE;
+        // Arrays to store [1st, 2nd] elements
+        int[] maxEven = {Integer.MIN_VALUE, Integer.MIN_VALUE};
+        int[] minEven = {Integer.MAX_VALUE, Integer.MAX_VALUE};
+        
+        int[] maxOdd = {Integer.MIN_VALUE, Integer.MIN_VALUE};
+        int[] minOdd = {Integer.MAX_VALUE, Integer.MAX_VALUE};
 
-        int MinEven = Integer.MAX_VALUE;
-        int MinEven2 = Integer.MAX_VALUE;
-
-        int MaxOdd = Integer.MIN_VALUE;
-        int MaxOdd2 = Integer.MIN_VALUE;
-
-        int MinOdd = Integer.MAX_VALUE;
-        int MinOdd2 = Integer.MAX_VALUE;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] % 2 == 0){
-                if (arr[i] > MaxEven) {
-                    MaxEven2 = MaxEven;
-                    MaxEven = arr[i];
-                } else if (arr[i] > MaxEven2 && arr[i] != MaxEven) {
-                    MaxEven2 = arr[i];
-                }
-
-                if (arr[i] < MinEven) {
-                    MinEven2 = MinEven;
-                    MinEven = arr[i];   
-                } else if (arr[i] < MinEven2 && arr[i] != MinEven) {
-                    MinEven2 = arr[i];
-                }
-            } else {
-                if (arr[i] > MaxOdd) {
-                    MaxOdd2 = MaxOdd;
-                    MaxOdd = arr[i];
-                } else if (arr[i] > MaxOdd2 && arr[i] != MaxOdd) {
-                    MaxOdd2 = arr[i];
-                }
-
-                if (arr[i] < MinOdd) {
-                    MinOdd2 = MinOdd;
-                        MinOdd = arr[i];   
-                } else if (arr[i] < MinOdd2 && arr[i] != MinOdd) {
-                    MinOdd2 = arr[i];
-                }
+        for (int val : arr) {
+            if ((val & 1) == 0) { // even
+                updateMax(maxEven, val);
+                updateMin(minEven, val);
+            } else { // odd
+                updateMax(maxOdd, val);
+                updateMin(minOdd, val);
             }
         }
-        System.out.println("MaxEven = " + MaxEven + " MaxEven2 = " + MaxEven2);
-        System.out.println("MaxOdd = " + MaxOdd + " MaxOdd2 = " + MaxOdd2);
-        System.out.println("MinEven = " + MinEven + " MinEven2 = " + MinEven2);
-        System.out.println("MinOdd = " + MinOdd + " MinOdd2 = " + MinOdd2); 
-
+        
+        System.out.println("MaxEven = " + maxEven[0] + " MaxEven2 = " + maxEven[1]);
+        System.out.println("MaxOdd = " + maxOdd[0] + " MaxOdd2 = " + maxOdd[1]);
+        System.out.println("MinEven = " + minEven[0] + " MinEven2 = " + minEven[1]);
+        System.out.println("MinOdd = " + minOdd[0] + " MinOdd2 = " + minOdd[1]); 
     }
 }
