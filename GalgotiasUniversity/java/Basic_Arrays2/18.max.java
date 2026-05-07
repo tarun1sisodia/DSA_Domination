@@ -22,7 +22,7 @@ class MaxMin {
     }
 
     public static void main(String[] args) {
-        int[] arr = {34, 79, 7, 65, 4, 6, 5, 5, 6, 54, 3};
+        int[] arr = {1,5,7,7};
 
         // Arrays to store [1st, 2nd] elements
         int[] maxEven = {Integer.MIN_VALUE, Integer.MIN_VALUE};
