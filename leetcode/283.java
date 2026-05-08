@@ -1,32 +1,48 @@
 class Solution {
     public void moveZeroes(int[] nums) {
         int n = nums.length;
-
-        //Creating extra because right now i am applying the brute frce approach for now.
-        int temp[] = new int[n];
-        // index is for managing the future index for array.
-        int index = 0;
-        // adding the at in temp arry from the original array.
-        for(int i = 0; i < n; i++){
-            // if the original arrya doesn'tcontain 0;
-            if(nums[i]!= 0){
-                // storing the data into temp array.
-                temp[index] = nums[i];
-                //for temporary next index;
-                index++;
+        int j = 0;
+        for(int i = 0; i < n ;i++){
+            if(nums[i] == 0){j = i; break;}
+        }
+        for(int i = j + 1 ; i < n; i++){
+            if(nums[i] != 0){
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                j++;
             }
         }
+    }
+}
 
-        // now we wil modify the original array using temp and its limits.
+class Solution1 {
+        public static void main(String[] args) {
+            int nums[] = {1,0,2,1,3,4,0,3,0,0,0,4,1,1};
+        int n = nums.length;
+        //because we supposing array doesn't contain any 0 in array.
+        int j = -1;
 
         for(int i = 0; i < n ;i++){
-            nums[i] = temp[i];
+            if(nums[i] == 0){
+                j = i;
+                break;
+            }
         }
-
-        //now we will add the 0 to end of array for that we will traverse the array from indx to n.
-
-        for(int i = index ; i < n; i++){
-            nums[i] = 0;
+        if(j == -1) return; // Checking that j is still -1 or not if yes then array doesn't contain any 0 in iteself and now we will just  return the array.
+        // starting from j+1 because we don't know where we iwll find the first j where it will zero
+        for(int i  = j+1; i < n; i++){
+            //now we are checking ht enon zero elements to swap with the xero elements
+            if(nums[i] != 0){
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                // j increasing because we need to know where we last time update j and current.
+                 j++;
+            }
+        }
+        for (int  k  : nums ) {
+            System.out.println(k+" ");
         }
     }
 }
