@@ -1,5 +1,6 @@
 // 5. Swap two numbers using third variable
 
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
