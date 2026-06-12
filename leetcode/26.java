@@ -4,13 +4,13 @@ class Solution {
         int nums[]  = {0,0,1,1,1,2,2,3,4};
         if (nums.length == 0) return;
 
-        int i = 0; //uniqueness maintain.
+        int j = 0; //uniqueness maintain.
 
-        for (int j = 1; j < nums.length; j++) {
+        for (int i : nums) {
 
-            if (nums[j] != nums[i]) {
-                i++;
-                nums[i] = nums[j];
+            if (i != nums[j]) {
+                j++;
+                nums[j] = i;
             }
         }
         for (int k   : nums ) {
@@ -22,3 +22,23 @@ class Solution {
         }
     }
 }
+
+class Solution2 {
+    public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) return 0;
+
+        HashSet<Integer> set = new HashSet<>();
+        int j = 0; //uniqueness maintain.
+        for (int i :nums) {
+            if (!set.contains(i)) {
+                set.add(i);
+                //here we are updatin the original array with the unique elements and maintaining the count of unique elements in j.
+                nums[j] = i;
+                j++;    
+            }
+        }
+        return j;
+    }
+}   
+
+
