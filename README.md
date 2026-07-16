@@ -96,3 +96,19 @@ Feel free to contribute by:
 ---
 
 **Happy Coding! 🎉** Master DSA one problem at a time.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
+## Two Pointers
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
+## Sorting
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
+<!---LeetCode Topics End-->
