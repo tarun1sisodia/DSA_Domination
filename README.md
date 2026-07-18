@@ -103,6 +103,7 @@ Feel free to contribute by:
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
+| [0217-contains-duplicate](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0217-contains-duplicate) |
 ## Two Pointers
 |  |
 | ------- |
@@ -111,4 +112,9 @@ Feel free to contribute by:
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
+| [0217-contains-duplicate](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0217-contains-duplicate) |
+## Hash Table
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
