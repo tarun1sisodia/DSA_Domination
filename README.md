@@ -102,11 +102,13 @@ Feel free to contribute by:
 ## Array
 |  |
 | ------- |
+| [0031-next-permutation](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0031-next-permutation) |
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0217-contains-duplicate) |
 ## Two Pointers
 |  |
 | ------- |
+| [0031-next-permutation](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0031-next-permutation) |
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
 ## Sorting
 |  |
