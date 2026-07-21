@@ -106,6 +106,7 @@ Feel free to contribute by:
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0217-contains-duplicate) |
 | [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
+| [1732-find-the-highest-altitude](https://github.com/tarun1sisodia/DSA_Domination/tree/master/1732-find-the-highest-altitude) |
 ## Two Pointers
 |  |
 | ------- |
@@ -144,4 +145,8 @@ Feel free to contribute by:
 |  |
 | ------- |
 | [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
+## Prefix Sum
+|  |
+| ------- |
+| [1732-find-the-highest-altitude](https://github.com/tarun1sisodia/DSA_Domination/tree/master/1732-find-the-highest-altitude) |
 <!---LeetCode Topics End-->
