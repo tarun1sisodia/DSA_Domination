@@ -108,6 +108,7 @@ Feel free to contribute by:
 | [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
 | [1572-matrix-diagonal-sum](https://github.com/tarun1sisodia/DSA_Domination/tree/master/1572-matrix-diagonal-sum) |
 | [1732-find-the-highest-altitude](https://github.com/tarun1sisodia/DSA_Domination/tree/master/1732-find-the-highest-altitude) |
+| [2614-prime-in-diagonal](https://github.com/tarun1sisodia/DSA_Domination/tree/master/2614-prime-in-diagonal) |
 ## Two Pointers
 |  |
 | ------- |
@@ -154,4 +155,13 @@ Feel free to contribute by:
 |  |
 | ------- |
 | [1572-matrix-diagonal-sum](https://github.com/tarun1sisodia/DSA_Domination/tree/master/1572-matrix-diagonal-sum) |
+| [2614-prime-in-diagonal](https://github.com/tarun1sisodia/DSA_Domination/tree/master/2614-prime-in-diagonal) |
+## Math
+|  |
+| ------- |
+| [2614-prime-in-diagonal](https://github.com/tarun1sisodia/DSA_Domination/tree/master/2614-prime-in-diagonal) |
+## Number Theory
+|  |
+| ------- |
+| [2614-prime-in-diagonal](https://github.com/tarun1sisodia/DSA_Domination/tree/master/2614-prime-in-diagonal) |
 <!---LeetCode Topics End-->
