@@ -105,6 +105,7 @@ Feel free to contribute by:
 | [0031-next-permutation](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0031-next-permutation) |
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0217-contains-duplicate) |
+| [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
 ## Two Pointers
 |  |
 | ------- |
@@ -119,4 +120,28 @@ Feel free to contribute by:
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0217-contains-duplicate) |
+## Binary Search
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
+## Segment Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
+## Merge Sort
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
+## Ordered Set
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0493-reverse-pairs) |
 <!---LeetCode Topics End-->
