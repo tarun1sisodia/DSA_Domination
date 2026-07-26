@@ -9,6 +9,7 @@ A comprehensive collection of Data Structures and Algorithms (DSA) problems, sol
 ## Array
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0011-container-with-most-water) |
 | [0031-next-permutation](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0031-next-permutation) |
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
 | [0152-maximum-product-subarray](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0152-maximum-product-subarray) |
@@ -22,6 +23,7 @@ A comprehensive collection of Data Structures and Algorithms (DSA) problems, sol
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0011-container-with-most-water) |
 | [0031-next-permutation](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0031-next-permutation) |
 | [0088-merge-sorted-array](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0088-merge-sorted-array) |
 | [0905-sort-array-by-parity](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0905-sort-array-by-parity) |
@@ -81,4 +83,8 @@ A comprehensive collection of Data Structures and Algorithms (DSA) problems, sol
 |  |
 | ------- |
 | [0152-maximum-product-subarray](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0152-maximum-product-subarray) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/tarun1sisodia/DSA_Domination/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
