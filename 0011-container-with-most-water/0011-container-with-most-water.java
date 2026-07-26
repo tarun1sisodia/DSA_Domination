@@ -37,7 +37,7 @@ class Solution {
             //we need max..
             maxArea = Math.max(area,maxArea);
 
-            if(height[i] < height[j]) i++;  //simple, left is smaller if you decrease the larger then there is less chance that you will have minimum.
+            if(height[i] <= height[j]) i++;  //simple, left is smaller if you decrease the larger then there is less chance that you will have minimum.
             else j--;
         }
         return maxArea;
